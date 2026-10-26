@@ -206,3 +206,13 @@ a:focus-visible,.btn:focus-visible,nav a:focus-visible{
 @media(max-width:380px){
   .btn{letter-spacing:.06em}
 }
+
+/* Enhanced content: DIY, tools, evergreen blogs and clearer hero hierarchy */
+.hero-k{font-size:clamp(20px,3.1vw,34px);line-height:1.22;letter-spacing:.16em;max-width:760px;color:#e6cc91;text-shadow:0 2px 14px #000; margin-bottom:14px}
+.hc h1{margin-bottom:18px}.btn-outline{background:transparent;color:#e6cc91;border:1px solid #c6a66c;clip-path:none}.btn-outline:hover{background:#6f4b3a;color:#fff}
+.tool-grid,.blog-grid,.diy-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.tool-grid article,.blog-grid article,.diy-grid article{background:linear-gradient(145deg,#261b16,#191310);padding:22px;border:1px solid #49372b;border-top:2px solid #b7652a;border-radius:4px}
+.tool-grid p,.blog-grid p,.diy-grid p{color:#c3b5a7;margin-bottom:0}
+.tool-art,.blog-art,.diy-art{height:116px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#38271e,#17110e);color:#d2b579;font-size:54px;margin:-22px -22px 18px;border-bottom:1px solid #60442f}
+.tool-grid h3,.blog-grid h2,.diy-grid h3{font-size:20px;margin-bottom:10px}.blog-grid h2{font-size:22px}
+@media(max-width:799px){.hero{min-height:78vh}.hc{padding:0 5% 34px}.hero-k{font-size:clamp(19px,5vw,27px);letter-spacing:.12em;max-width:100%}.script{font-size:clamp(46px,12vw,72px)}nav{gap:0 12px}nav a{font-size:13px}.tool-grid,.blog-grid,.diy-grid{grid-template-columns:1fr}.tool-art,.blog-art,.diy-art{height:100px}}
