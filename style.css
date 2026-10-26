@@ -94,3 +94,115 @@ footer .script{color:var(--o)}
  .stats span{font-size:9px}
 }
 @media(prefers-reduced-motion:reduce){.btn{transition:none}}
+
+
+/* Krypton Garage Services — Champagne Gold, Mocha Brown & Burnt Amber palette */
+:root{
+  --bg:#100d0b;
+  --c:#1c1512;
+  --c2:#29201b;
+  --ln:#44352c;
+  --t:#f6f0e7;
+  --m:#c3b5a7;
+  --o:#d2b579; /* champagne gold accent */
+  --mocha:#6f4b3a;
+  --amber:#b7652a;
+  --ivory:#f6f0e7;
+  --espresso:#100d0b;
+}
+html{background:var(--bg)}
+body{background:var(--bg);color:var(--t)}
+header{
+  background:rgba(16,13,11,.97);
+  border-bottom:1px solid #4b382b;
+}
+.brand{box-shadow:0 2px 14px #0005}
+nav a{color:#c9bbae}
+nav a:hover,nav a.on{color:var(--o);border-color:var(--o)}
+h2:after{background:linear-gradient(90deg,var(--o),var(--amber))}
+.k{color:#d6a06b}
+.hero:after{
+  background:linear-gradient(180deg,#100d0b55 0%,#100d0b0a 30%,#100d0bf2 100%);
+}
+.btn{
+  background:linear-gradient(135deg,#ddc58f,#c59b58);
+  color:#20150e;
+  border:1px solid #ddc58f;
+  border-radius:3px;
+  box-shadow:0 3px 12px #0002;
+}
+.btn.wa{
+  background:linear-gradient(135deg,#6f4b3a,#4d3328);
+  border-color:#8b6148;
+  color:#fff5e9;
+}
+.btn:hover{
+  background:linear-gradient(135deg,#f0dca9,#d3a66b);
+  border-color:#f0dca9;
+  color:#20150e;
+}
+.btn.wa:hover{
+  background:linear-gradient(135deg,#8b6047,#67432f);
+  border-color:var(--o);
+  color:#fff8ef;
+}
+.stats{
+  background:linear-gradient(110deg,#211713,#17110e 55%,#2a1b13);
+  color:var(--ivory);
+  border-top:1px solid #60442f;
+  border-bottom:1px solid #60442f;
+}
+.stats div+div{border-left:1px solid #49352a}
+.stats b{color:var(--o)}
+.cards a,.svc article,.three article,.team article{
+  background:linear-gradient(145deg,#261b16,#191310);
+  border-top:2px solid #9b6b43;
+  box-shadow:0 8px 22px #0002;
+}
+.cards a:hover{background:linear-gradient(145deg,#32231b,#211712)}
+.cards em{color:#654b3b}
+.list li{border-bottom-color:#3e2e25}
+.list li:before{background:var(--amber)}
+.rev{
+  background:linear-gradient(145deg,#241a15,#191310);
+  border-top:2px solid #9b6b43;
+}
+.rev blockquote{color:#e7dcd0}
+.st{color:var(--o)}
+.ic{color:var(--o)}
+.vals li{border-color:#5b4232;background:#1b1410}
+.soc a{border-color:#5b4232;color:#f5eadc}
+.soc a:hover{background:#6f4b3a;border-color:var(--o)}
+.cta{
+  background:rgba(16,13,11,.97);
+  border-top:1px solid #5a3d2b;
+}
+footer{
+  background:#0d0907;
+  border-top:2px solid #80502f;
+  color:#c3b5a7;
+}
+footer .script{color:var(--o)}
+.no-rental{
+  border-color:#805638;
+  border-left:4px solid var(--amber);
+  background:linear-gradient(125deg,#2a1b14,#17110e);
+}
+.rental-mark{background:var(--amber);color:#fff7ed}
+a:focus-visible,.btn:focus-visible,nav a:focus-visible{
+  outline:2px solid var(--o);
+  outline-offset:3px;
+}
+@media(max-width:799px){
+  header{background:rgba(16,13,11,.98)}
+  .hero:after{
+    background:linear-gradient(180deg,#100d0b4d 0%,#100d0b10 25%,#100d0bf5 100%);
+  }
+  .stats{background:linear-gradient(110deg,#211713,#17110e 55%,#2a1b13)}
+  .cards a,.svc article,.three article,.team article{padding:20px;background:linear-gradient(145deg,#261b16,#191310)}
+  .btn{box-shadow:none}
+  .cta .btn{min-width:0}
+}
+@media(max-width:380px){
+  .btn{letter-spacing:.06em}
+}
