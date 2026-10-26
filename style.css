@@ -35,3 +35,62 @@ footer{background:#000;border-top:3px solid var(--o);padding:30px 5% 40px;text-a
 .no-rental p{margin:0;color:#ddd}
 .rental-mark{display:inline-block;font:700 11px Oswald,sans-serif;letter-spacing:.16em;color:#fff;background:var(--o);padding:4px 9px}
 @media(max-width:799px){header{align-items:center}.brand{margin:2px 0}nav{width:100%;gap:2px 15px}}
+
+/* Refined, classic visual system: charcoal, ivory and muted champagne bronze */
+:root{--bg:#0b0b0c;--c:#141416;--c2:#1b1b1e;--ln:#303034;--t:#f2f0ec;--m:#aaa7a1;--o:#c5a27b}
+body{background:var(--bg);color:var(--t)}
+header{background:rgba(11,11,12,.96);border-bottom-color:#29292c}
+nav a:hover,nav a.on{color:#f4eee5;border-color:var(--o)}
+.k{color:var(--o)}
+h2:after{background:var(--o)}
+.btn{background:var(--o);color:#171513;border:1px solid var(--o);border-radius:2px;clip-path:none;font-weight:700;transition:background .2s ease,border-color .2s ease,color .2s ease}
+.btn.wa{background:#1b1b1e;color:#f2f0ec;border-color:#66615a}
+.btn:hover{filter:none;background:#e0c8aa;border-color:#e0c8aa;color:#171513}
+.btn.wa:hover{background:#2b2b2f;border-color:var(--o);color:#fff}
+.stats{background:#121214;color:#f2f0ec;border-top:1px solid #343033;border-bottom:1px solid #343033}
+.stats div+div{border-left:1px solid #343033}
+.stats b{color:var(--o)}
+.cards a,.svc article,.three article,.team article{border-top:1px solid #665747;background:linear-gradient(145deg,#171719,#121214)}
+.cards a:hover{background:#202023}
+.list li:before{background:var(--o)}
+.rev{border-top:1px solid #665747}
+.ic{color:var(--o)}
+.soc a:hover{background:#272528;border-color:var(--o)}
+.cta{background:rgba(10,10,11,.96);border-top:1px solid #353236}
+footer{border-top:1px solid #514538;background:#09090a}
+footer .script{color:var(--o)}
+.no-rental{border-color:#675747;background:linear-gradient(135deg,#191716,#111113);border-left:3px solid var(--o)}
+.rental-mark{background:#c5a27b;color:#171513}
+@media(max-width:799px){
+ body{font-size:16px;padding-bottom:68px}
+ header{padding:10px 4%;gap:10px;align-items:flex-start}
+ .brand{max-width:210px;padding:4px 8px}
+ .brand img{height:60px;width:auto;max-width:100%}
+ nav{display:flex;width:100%;gap:4px 16px;align-items:center}
+ nav a{font-size:12px;letter-spacing:.08em;padding:5px 0}
+ .hero{min-height:76svh;min-height:76vh}
+ .hc{padding:0 5% 32px}
+ .k{font-size:11px;letter-spacing:.2em;line-height:1.5}
+ .script{font-size:clamp(48px,12vw,76px)}
+ .lead{font-size:1.05em}
+ .w{padding:32px 5%}
+ .stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .stats div{padding:13px 4px}
+ .stats b{font-size:clamp(19px,5vw,28px)}
+ .stats span{font-size:10px;letter-spacing:.06em;line-height:1.35;display:block}
+ .cards,.svc,.three,.team{grid-template-columns:1fr;gap:12px}
+ .cards a,.svc article,.three article,.team article{padding:20px}
+ .btn{padding:11px 17px;font-size:13px;letter-spacing:.1em;margin-right:5px}
+ .cta{padding:7px 10px;gap:8px}
+ .cta .btn{flex:1;text-align:center;margin:0;max-width:220px}
+ .no-rental{padding:19px}
+ iframe{height:300px}
+}
+@media(max-width:380px){
+ .brand img{height:52px}
+ nav{gap:3px 11px}
+ nav a{font-size:11px;letter-spacing:.06em}
+ .btn{padding:10px 12px;font-size:12px}
+ .stats span{font-size:9px}
+}
+@media(prefers-reduced-motion:reduce){.btn{transition:none}}
