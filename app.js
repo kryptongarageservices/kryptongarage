@@ -1,0 +1,3 @@
+(function(){var r=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;if(r)return;
+document.querySelectorAll('.stats b').forEach(function(el){var m=el.textContent.match(/^(\d[\d,]*)(.*)$/);if(!m||el.textContent.indexOf('/')>-1)return;var end=parseInt(m[1].replace(/,/g,''),10),suf=m[2],done=false;
+var io=new IntersectionObserver(function(e){if(!e[0].isIntersecting||done)return;done=true;var t0=null;(function f(t){t0=t0||t;var p=Math.min((t-t0)/1400,1),v=Math.round(end*(1-Math.pow(1-p,3)));el.textContent=v.toLocaleString('en-IN')+suf;if(p<1)requestAnimationFrame(f)})(performance.now())},{threshold:.6});io.observe(el)})})();
