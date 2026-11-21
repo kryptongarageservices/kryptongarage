@@ -283,3 +283,5 @@ a:not(.btn):not(.brand):not(nav a):hover{color:var(--amber-l)}
 .cards{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
 footer .script{color:#a9c68c}
 .hero-k{color:#d3e8b8!important;text-shadow:0 1px 3px #000,0 2px 14px rgba(0,0,0,.85)!important;font-weight:600!important}
+
+.btn.wa{background:linear-gradient(180deg,#3a7f90,#2b6777)!important;color:#fff!important}.btn.wa:hover{box-shadow:0 0 18px rgba(82,171,152,.6)!important}
